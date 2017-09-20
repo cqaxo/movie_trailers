@@ -1,0 +1,114 @@
+* {
+  font-family: "Cormorant Garamond", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Set my own breakpoints */
+
+@media (max-width: 575px) {
+  .movie-tile {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .movie-tile {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .movie-tile {
+    width: 33%;
+    height: 33%;
+  }
+}
+
+@media (min-width: 1550px) {
+  .movie-tile {
+    width: 16.6%;
+    height: 16.6%;
+  }
+}
+
+header {
+  /* Gradient courtesy of https://www.uigradients.com/ */
+  background: #070000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #070000, #4c0001, #070000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #070000, #4c0001, #070000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 8% 0 8% 0;
+}
+
+.brand-heading {
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+main {
+  background: #070000;
+  padding-left: 1.6%;
+  padding-right: 1.6%;
+  padding-bottom: 100%;
+}
+
+figcaption {
+  font-size: 1.5rem !important;
+  color: #ffffff !important;
+  padding-top: 5% !important;
+}
+
+img {
+  border-radius: 1px;
+  box-shadow: 2px 5px 16px #380001;
+  padding: 8%;
+}
+
+img:hover {
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  background: #360002;
+  cursor: pointer;
+}
+
+#trailer .modal-dialog {
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+.hanging-close {
+  position: absolute;
+  z-index: 9001;
+  margin: auto;
+  left: 48%;
+  top: 110%;
+}
+
+#trailer-video {
+  width: 100%;
+  height: 100%;
+}
+
+.scale-media {
+  padding-bottom: 56.25%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.scale-media iframe {
+  border: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
